@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | Dr Johnjohnson Dental Practice</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5fbff;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Header */
+
+header{
+    background:white;
+    text-align:center;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.logo{
+    padding:20px;
+}
+
+.logo img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+}
+
+.logo h1{
+    color:#005b96;
+    margin-top:10px;
+}
+
+.logo p{
+    color:#666;
+}
+
+/* Navigation */
+
+nav{
+    background:#0077b6;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    flex-wrap:wrap;
+}
+
+nav li{
+    margin:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover,
+.active{
+    color:#90e0ef;
+}
+
+/* Hero Section */
+
+.hero{
+    text-align:center;
+    padding:80px 20px;
+    color:white;
+    background:linear-gradient(rgba(0,91,150,.75),rgba(0,91,150,.75)),
+    url("images/hero.jpg");
+    background-size:cover;
+    background-position:center;
+}
+
+.hero h2{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+}
+
+/* Main Content */
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+    padding:60px 0;
+}
+
+.section-title{
+    text-align:center;
+    color:#005b96;
+    margin-bottom:40px;
+}
+
+.about-card{
+    background:white;
+    padding:35px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    margin-bottom:30px;
+}
+
+.about-card h3{
+    color:#0077b6;
+    margin-bottom:15px;
+}
+
+.about-card p{
+    text-align:justify;
+}
+
+.about-image{
+    display:block;
+    width:250px;
+    margin:20px auto;
+    border-radius:50%;
+    border:5px solid #0077b6;
+}
+
+/* Footer */
+
+footer{
+    background:#005b96;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    nav ul{
+        flex-direction:column;
+    }
+
+    .hero h2{
+        font-size:30px;
+    }
+
+    .about-card{
+        padding:20px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+<img src="images/image1.webp" alt="Logo">
+
+<h1>Dr Johnjohnson Dental Practice</h1>
+
+<p>Your Smile, Our Priority</p>
+
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+<li><a class="active" href="about.html">About Us</a></li>
+<li><a href="services.html">Services</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h2>About Our Practice</h2>
+
+<p>
+Providing quality dental care with professionalism, compassion, and modern treatment for every patient.
+</p>
+
+</section>
+
+<section class="container">
+
+<h2 class="section-title">Who We Are</h2>
+
+<img src="images/Scott-768x1024.jpg" alt="Dentist" class="about-image">
+
+<div class="about-card">
+
+<h3>Our Story</h3>
+
+<p>
+Dr Johnjohnson Dental Practice is committed to providing exceptional dental care in a friendly and welcoming environment. We believe that every patient deserves personalised treatment and attention. Our experienced team uses modern dental techniques and equipment to ensure comfortable, safe, and effective care for patients of all ages.
+</p>
+
+</div>
+
+<div class="about-card">
+
+<h3>Our Mission</h3>
+
+<p>
+Our mission is to improve the oral health of our community by delivering high-quality dental services with honesty, professionalism, and compassion. We strive to make every visit comfortable while helping our patients achieve healthy and confident smiles.
+</p>
+
+</div>
+
+<div class="about-card">
+
+<h3>Our Vision</h3>
+
+<p>
+Our vision is to become one of the most trusted and respected dental practices, recognised for outstanding patient care, innovative treatment, and excellent customer service. We aim to build lasting relationships with every patient through quality healthcare and continuous improvement.
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>&copy; 2026 Dr Johnjohnson Dental Practice | All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>

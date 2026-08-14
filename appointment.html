@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Appointments | Dr Johnjohnson Dental Practice</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5fbff;
+    color:#333;
+}
+
+/* Header */
+
+header{
+    background:white;
+    text-align:center;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.logo{
+    padding:20px;
+}
+
+.logo img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+}
+
+.logo h1{
+    color:#005b96;
+    margin-top:10px;
+}
+
+.logo p{
+    color:#666;
+}
+
+/* Navigation */
+
+nav{
+    background:#0077b6;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    flex-wrap:wrap;
+}
+
+nav li{
+    margin:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover,
+.active{
+    color:#90e0ef;
+}
+
+/* Hero */
+
+.hero{
+    text-align:center;
+    padding:80px 20px;
+    color:white;
+    background:linear-gradient(rgba(0,91,150,.75),rgba(0,91,150,.75)),
+    url("images/hero.jpg");
+    background-size:cover;
+    background-position:center;
+}
+
+.hero h2{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.6;
+}
+
+/* Page */
+
+.page{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:60px 0;
+}
+
+.page h2{
+    text-align:center;
+    color:#005b96;
+    margin-bottom:30px;
+}
+
+/* Appointment Table */
+
+.appointment-table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.appointment-table th{
+    background:#0077b6;
+    color:white;
+    padding:15px;
+}
+
+.appointment-table td{
+    padding:15px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+}
+
+.appointment-table tr:nth-child(even){
+    background:#f4fbff;
+}
+
+.appointment-table tr:hover{
+    background:#dff5ff;
+}
+
+/* Status */
+
+.confirmed{
+    color:green;
+    font-weight:bold;
+}
+
+.pending{
+    color:orange;
+    font-weight:bold;
+}
+
+.completed{
+    color:#005b96;
+    font-weight:bold;
+}
+
+/* Footer */
+
+footer{
+    background:#005b96;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    nav ul{
+        flex-direction:column;
+    }
+
+    .hero h2{
+        font-size:30px;
+    }
+
+    .appointment-table{
+        font-size:13px;
+    }
+
+    .appointment-table th,
+    .appointment-table td{
+        padding:10px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+<img src="images/image1.webp" alt="Logo">
+
+<h1>Dr Johnjohnson Dental Practice</h1>
+
+<p>Your Smile, Our Priority</p>
+
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a class="active" href="appointment.html">Appointments</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h2>Patient Appointments</h2>
+
+<p>
+View scheduled appointments and upcoming bookings for patients at
+Dr Johnjohnson Dental Practice.
+</p>
+
+</section>
+
+<section class="page">
+
+<h2>Upcoming Appointments</h2>
+
+<table class="appointment-table">
+
+<thead>
+
+<tr>
+
+<th>Booking ID</th>
+<th>Patient</th>
+<th>Date</th>
+<th>Time</th>
+<th>Treatment</th>
+<th>Status</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>001</td>
+<td>Null</td>
+<td>Null</td>
+<td>Null</td>
+<td>Null</td>
+<td><span class="confirmed">Null</span></td>
+</tr>
+
+
+
+</tbody>
+
+</table>
+
+</section>
+
+<footer>
+
+<p>&copy; 2026 Dr Johnjohnson Dental Practice | All Rights Reserved</p>
+
+</footer>
+
+</body>
+</html>

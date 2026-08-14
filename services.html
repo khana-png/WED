@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr Johnjohnson Dental Practice</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f5fbff;
+            color:#333;
+        }
+
+        /* Logo */
+
+        .logo-section{
+            background:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        .logo-section img{
+            width:120px;
+            height:120px;
+            border-radius:50%;
+            object-fit:cover;
+        }
+
+        .logo-section h1{
+            color:#005b96;
+            margin-top:10px;
+        }
+
+        .logo-section p{
+            color:#666;
+        }
+
+        /* Navigation */
+
+        nav{
+            background:#0077b6;
+            padding:15px;
+        }
+
+        nav ul{
+            display:flex;
+            justify-content:center;
+            list-style:none;
+            gap:40px;
+        }
+
+        nav ul li a{
+            text-decoration:none;
+            color:white;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        nav ul li a:hover{
+            color:#90e0ef;
+        }
+
+        /* Hero */
+
+        .hero{
+            text-align:center;
+            padding:80px 20px;
+            background:linear-gradient(rgba(0,91,150,.7),rgba(0,91,150,.7)),
+            url("images/dentist.jpg");
+            background-size:cover;
+            background-position:center;
+            color:white;
+        }
+
+        .hero h2{
+            font-size:42px;
+            margin-bottom:20px;
+        }
+
+        .hero p{
+            width:70%;
+            margin:auto;
+            font-size:18px;
+            line-height:1.6;
+        }
+
+        .btn{
+            display:inline-block;
+            margin-top:30px;
+            background:#00b4d8;
+            color:white;
+            padding:15px 35px;
+            text-decoration:none;
+            border-radius:30px;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            background:#0096c7;
+        }
+
+        /* About */
+
+        .about{
+            padding:70px 10%;
+            text-align:center;
+        }
+
+        .about h2{
+            color:#005b96;
+            margin-bottom:20px;
+        }
+
+        /* Services */
+
+        .services{
+            padding:70px 10%;
+            background:white;
+        }
+
+        .services h2{
+            text-align:center;
+            color:#005b96;
+            margin-bottom:40px;
+        }
+
+        .service-container{
+            display:flex;
+            justify-content:center;
+            gap:30px;
+            flex-wrap:wrap;
+        }
+
+        .card{
+            width:280px;
+            background:#eef8fc;
+            border-radius:10px;
+            padding:25px;
+            text-align:center;
+            box-shadow:0 0 10px rgba(0,0,0,.1);
+        }
+
+        .card h3{
+            margin-bottom:15px;
+            color:#0077b6;
+        }
+
+        footer{
+            background:#005b96;
+            color:white;
+            text-align:center;
+            padding:25px;
+            margin-top:50px;
+        }
+
+        @media(max-width:768px){
+
+            nav ul{
+                flex-direction:column;
+                gap:15px;
+            }
+
+            .hero h2{
+                font-size:32px;
+            }
+
+            .hero p{
+                width:100%;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+<header>
+<!-- Logo -->
+
+<div class="logo-section">
+
+    <img src="images/image1.webp" alt="Logo">
+
+    <h1>Dr Johnjohnson Dental Practice</h1>
+
+    <p>Your Smile, Our Priority</p>
+
+</div>
+
+
+<nav>
+
+<ul>
+
+                <a href="index.html">Home</a> 
+                <a href="about.html">About</a> 
+                <a href="contact.html">Contact us</a> 
+                <a href="services.html">Services</a>
+                <a href="appointment.html">Appointment</a>
+
+</ul>
+
+</nav>
+</header><main>
+
+
+<section class="hero">
+
+<h2>Healthy Smiles Start Here</h2>
+
+<p>
+
+Welcome to Dr Johnjohnson Dental Practice, where we are committed to providing professional,
+friendly and high-quality dental care for you and your family.
+
+</p>
+
+<a href="contact.html" class="btn">Book an Appointment</a>
+
+</section>
+
+<!-- About -->
+
+<section class="about">
+    </main>
+    <footer></footer>
+    </body>
+</html>

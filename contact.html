@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Dr Johnjohnson Dental Practice</title>
+
+<style>
+
+/* General */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5fbff;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Header */
+header{
+    background:white;
+    text-align:center;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.logo{
+    padding:20px;
+}
+
+.logo img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.logo h1{
+    color:#005b96;
+    margin-top:10px;
+}
+
+.logo p{
+    color:#666;
+}
+
+/* Navigation */
+nav{
+    background:#0077b6;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    flex-wrap:wrap;
+}
+
+nav li{
+    margin:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover,
+.active{
+    color:#90e0ef;
+}
+
+
+.hero{
+    text-align:center;
+    padding:80px 20px;
+    background:linear-gradient(rgba(0,91,150,.75),rgba(0,91,150,.75)),
+    url("images/hero.jpg");
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+.hero h2{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    font-size:18px;
+}
+
+/* Contact Section */
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:60px auto;
+}
+
+.section-title{
+    text-align:center;
+    color:#005b96;
+    margin-bottom:40px;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px,1fr));
+    gap:30px;
+}
+
+.contact-card,
+.form-card{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,.1);
+}
+
+.contact-card h3,
+.form-card h3{
+    color:#0077b6;
+    margin-bottom:20px;
+}
+
+.contact-card p{
+    margin-bottom:15px;
+}
+
+/* Form */
+form input,
+form textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+form textarea{
+    resize:none;
+}
+
+form input[type="submit"]{
+    background:#0077b6;
+    color:white;
+    border:none;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+form input[type="submit"]:hover{
+    background:#005b96;
+}
+
+/* Map */
+.map{
+    margin-top:40px;
+}
+
+.map iframe{
+    width:100%;
+    height:350px;
+    border:none;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,.1);
+}
+
+/* Footer */
+footer{
+    background:#005b96;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+    nav ul{
+        flex-direction:column;
+    }
+
+    .hero h2{
+        font-size:30px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+    <img src="images/image1.webp" alt="Logo">
+    <h1>Dr Johnjohnson Dental Practice</h1>
+    <p>Your Smile, Our Priority</p>
+</div>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="services.html">Services</a></li>
+
+<li><a class="active" href="contact.html">Contact Us</a></li>
+</ul>
+</nav>
+
+</header>
+
+<section class="hero">
+<h2>Contact Us</h2>
+<p>
+We are here to help. Contact us today to schedule your appointment or ask any questions about our dental services.
+</p>
+</section>
+
+<section class="container">
+
+<h2 class="section-title">Get in Touch</h2>
+
+<div class="contact-grid">
+
+<div class="contact-card">
+
+<h3>Practice Information</h3>
+
+<p><strong>📍 Address:</strong><br>
+123 Main Street, Johannesburg, Gauteng</p>
+
+<p><strong>📞 Phone:</strong><br>
++27 11 123 4567</p>
+
+<p><strong>📧 Email:</strong><br>
+info@drjohnjohnson.co.za</p>
+
+<p><strong>🕒 Opening Hours:</strong><br>
+Monday – Friday: 08:00 – 17:00<br>
+Saturday: 08:00 – 13:00<br>
+Sunday: Closed
+</p>
+
+</div>
+
+<div class="form-card">
+
+<h3>Send Us a Message</h3>
+
+<form>
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<input type="tel" placeholder="Phone Number">
+
+<textarea rows="6" placeholder="Your Message"></textarea>
+
+<input type="submit" value="Send Message">
+
+</form>
+
+</div>
+
+</div>
+
+<div class="map">
+
+<iframe
+src="https://www.google.com/maps?q=Johannesburg&output=embed"
+loading="lazy">
+</iframe>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>&copy; 2026 Dr Johnjohnson Dental Practice | All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
